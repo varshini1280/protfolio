@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" 
+
+crossorigin="anonymous">
+    <link rel="stylesheet" href="stylecss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <title>Portfolio website</title>
+</head>
+<body style="height: 1000px;">
+    <!---main section-->
+    <section class="sec1" id="home">
+    <i class="fa fa-arrow-up" aria-hidden="true" onclick = "scrollToTop();"></i>
+        <div class="bg">
+            <div class="navigation">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav">
+            <h2>Portfolio</h2>
+            <div class="navBar">
+                <ul>
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu">
+            </div>
+        </div>
+        <div class="context">
+            <h2>Hello, I'm</h2>
+            <h1>Varshini.S</h1>
+            <h4>I'm a student</h4>
+            </div>
+    </section>
+    <!---!main section-->
+    <!--about us section-->
+    <section class="sec2" id="about">
+        <h2 class="head">about Me</h2>
+        <div class="container">
+            <div class="content one" data-aos="fade-right" data-aos-offset="250" data-aos-duration="1000">
+                <h2>I'm a Student</h2>
+                <p> computer science student</p>
+                <p></p>I love learning how computers work, how they interact with the human world, and what makes them tick. I am excited to learn more about this field and continue contributing to the world around me through technology.</p>
+            </div>
+            <div class="image" data-aos="fade-left" data-aos-offset="250" data-aos-duration="1000">
+                <!-- <img src="file:///D:/asta/IMG_20231020_204219.JPG"></div> -->
+        </div>
+    </section>
+    <!--!about us section-->
+    <!---our services section----->
+
+    <!---!our services section----->
+    <!----our latest work section------->
+    
+    
+    <!----!our testimonial section------->
+    <!------contact us section--------->
+    <section class="sec6" data-aos="fade-right" data-aos-offset="250" data-aos-duration="1000" id="contact">
+        <h2 class="head">Contact Me</h2>
+        <div class="container">
+            <div class="box1 box" data-aos="flip-left" data-aos-offset="250" data-aos-duration="1000">
+                <h2>Contact Info</h2>
+                <div class="book">
+                    <div class="page1">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i><span>Address</span>
+                    </div>
+                    <div class="page2">
+                        107/18d/21 paulpandi nagar 2nd street Millurpuram <br>
+                        Thoothukudi<br>
+                        628002
+                    </div>
+                </div>
+                <div class="book">
+
+                    <div class="page1">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i><span>Email</span>
+                    </div>
+                    <div class="page2">
+                        sundarvarshini2003@gmail.com
+                    </div>
+                </div>
+                <div class="book">
+                    <div class="page1">
+                        <i class="fa fa-phone" aria-hidden="true"></i><span>Phone</span>
+                    </div>
+                    <div class="page2">
+                    7598951756
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------!contact us section--------->
+   
+    <script>
+      AOS.init();
+    </script>
+    <script>
+        var menu = document.querySelector('.menu');
+        var bg = document.querySelector('.bg');
+        menu.addEventListener('click',function(){
+            bg.classList.toggle('active');
+            menu.classList.toggle('active');
+        })
+    </script>
+    <script>
+        var nav = document.querySelector('.nav');
+        window.addEventListener('scroll',function(){
+            nav.classList.toggle('sticky',window.scrollY>0);
+        })
+    </script>
+    <script>
+        window.addEventListener('scroll',function(){
+            var scroll = document.querySelector('.fa');
+            scroll.classList.toggle("active",window.scrollY>500)
+        })
+        function scrollToTop(){
+            window.scrollTo({
+                top:0,
+                behavior:'smooth'
+            })
+        }
+    </script>
+</body>
+</html
